@@ -25,7 +25,7 @@ git clone http://git.pef.mendelu.cz/xvsiansk/anton.git
 # Usage
 
 ```
-docker-compose up
+sudo docker-compose up
 ```
 
 Go to **localhost:8000** (root, test) and run a command
