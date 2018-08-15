@@ -1,10 +1,55 @@
 # docker-lamp
-Docker example with Apache, MySql 5.7, PhpMyAdmin and Php
+Docker containers with Apache, MySql 5.7, PhpMyAdmin and PHP fully supporting system Anton
 
-I use docker-compose as an orchestrator. To run these containers:
+**FOR ANTON YOU HAVE TO GET ACCESS FROM MENDELU**
+
+# Install on Fedora
 
 ```
-docker-compose up -d
+git clone https://github.com/rvsia/docker-lamp-for-Anton.git
 ```
 
-That's it!
+Create a folder "dump" where you should insert a dump of Anton database called "myDb.sql"
+
+```
+mkdir dump
+cp path-to-my-dump dump/
+```
+Now you should clone repository of Anton
+
+```
+cd www
+git clone http://git.pef.mendelu.cz/xvsiansk/anton.git
+```
+
+# Usage
+
+```
+docker-compose up
+```
+
+Go to **localhost:8000** (root, test) and run a command
+
+```
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+```
+
+That's it! Let's go make a magic!
+
+Anton should be running on **localhost:8001**
+PHPMyAdmin on **localhost:8000**
+
+Main script for comparing documents
+
+```
+sudo docker exec dockerlamp_www_1 /var/www/html/anton/app/backend/do-all.sh
+```
+
+# Possible problems
+
+1. Look into log files in Anton/log
+2. Be sure you have a right permissions on your Host, Docker should have to have an access to an-data, an-data-sc, temp, log and it should be able to execute scripts in app/backend
+
+# TODO
+
+1. Setup debug mode
