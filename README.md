@@ -13,7 +13,7 @@ Create a folder "dump" where you should insert a dump of Anton database called "
 
 ```
 mkdir dump
-cp path-to-my-dump dump/
+cp path-to-my-dump dump/myDb.sql
 ```
 Now you should clone repository of Anton
 
