@@ -48,7 +48,7 @@ sudo docker exec dockerlamp_www_1 /var/www/html/anton/app/backend/do-all.sh
 # Possible problems
 
 1. Look into log files in Anton/log
-2. Be sure you have a right permissions on your Host, Docker should have to have an access to an-data, an-data-sc, temp, log and it should be able to execute scripts in app/backend
+2. Be sure you have right permissions on your Host: Docker should have writable rights in an-data, an-data-sc, temp, log and it should be able to execute scripts in app/backend
 
 # TODO
 
