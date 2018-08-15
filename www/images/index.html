@@ -1,0 +1,796 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Anton">
+    <title>Anton</title>
+    <link rel="stylesheet" href="screen.css" media="screen, tv" type="text/css">
+    <link rel="stylesheet" href="jquerycssmenu.css" media="screen, tv" type="text/css" />
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="jquerycssmenu.js"></script>
+
+<!--    <link rel="shortcut icon" href="favicon.ico">-->
+
+
+
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#log").hover(function(){
+		$("#logout").fadeIn();
+	},function(){
+		$("#logout").fadeOut();
+	});
+});
+</script>
+<div id="head">
+		<a href=""><img src="logo.png" alt="μB"></a>
+		<h1>anton: Antiplagiator</h1>
+		<div id="logandlang">
+			
+			<div id="log">
+					<a href="#">Roman Bilek</a>
+
+					<div id="logout">
+						
+						
+						
+						<a href="">Logout</a>
+						<a href="changePassword">Change password</a>
+					</div>
+			</div>
+			
+			<div id="lang">
+				<a href="" rel="uBLinkSelect" class="uBLinkSelect">
+						<img src="flag-en.png" />
+
+					English (General)
+				</a>
+			</div>
+		</div>
+		<div id="topmenu" class="jquerycssmenu">
+
+
+			<ul>
+							<li>
+							<a class="active" id="nav_projects-en" href="/en/projects">
+
+								<span>
+										Projects
+								</span>
+							</a>
+
+							</li>
+							<li>
+							<a id="nav_sites-en" href="/en/sites">
+								<span>
+										Sites
+								</span>
+
+							</a>
+
+			<ul>
+							<li>
+							<a id="nav_websitegroups-en" href="/en/websiteGroups">
+								<span>
+										Website Groups
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_websites-en" href="/en/websites">
+								<span>
+										Websites
+								</span>
+							</a>
+
+							</li>
+							<li>
+							<a id="nav_webservices-en" href="/en/webservices">
+
+								<span>
+										Webservice systems
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_roles-en" href="/en/webgroupRoles">
+								<span>
+										Roles
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_users-en" href="/en/users">
+								<span>
+										Users
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_zones-en" href="/en/zones">
+								<span>
+										Zones
+								</span>
+							</a>
+
+							</li>
+							<li>
+							<a id="nav_documenttypes-en" href="/en/documentTypes">
+
+								<span>
+										Document Types
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_documenttypegroups-en" href="/en/documentTypeGroups">
+								<span>
+										Document Type Groups
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_websiteTrackingSystems-en" href="/en/websiteTrackingSystems">
+								<span>
+										Web analytics
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_userGroups-en" href="/en/userGroups">
+								<span>
+										User Groups
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_objectAttributes-en" href="/en/objectAtributes">
+
+								<span>
+										Object Attributes
+								</span>
+							</a>
+							</li>
+			</ul>
+							</li>
+							<li>
+							<a id="nav_ecommerce-en" href="/en/ecommerce">
+
+								<span>
+										eCommerce
+								</span>
+							</a>
+
+			<ul>
+							<li>
+							<a id="nav_productCatalog-en" href="/en/productCatalog">
+								<span>
+										Product Catalog
+								</span>
+
+							</a>
+
+							</li>
+							<li>
+							<a id="nav_checkoutSettings-en" href="/en/checkoutSettings">
+								<span>
+										Checkout Settings
+								</span>
+							</a>
+
+							</li>
+							<li>
+							<a id="nav_basicSettings-en" href="/en/basicSettings">
+								<span>
+										Basic Settings
+								</span>
+							</a>
+
+			<ul>
+							<li>
+
+							<a id="nav_branches-en" href="/en/branches">
+								<span>
+										Branches
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_vatCategories-en" href="/en/vatCategories">
+								<span>
+
+										VAT Categories
+								</span>
+							</a>
+							</li>
+			</ul>
+							</li>
+			</ul>
+							</li>
+							<li>
+
+							<a id="nav_documentation-en" href="/en/documentation">
+								<span>
+										Documentation
+								</span>
+							</a>
+
+			<ul>
+							<li>
+							<a id="nav_help-en" href="/en/help/index">
+								<span>
+
+										Help Topics
+								</span>
+							</a>
+
+			<ul>
+							<li>
+							<a id="nav_HelpObjAtributes-en" href="/en/help/objectAtributes">
+								<span>
+										Object Attributes
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpUserGroups-en" href="/en/help/userGroups">
+								<span>
+										User Groups
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_HelpWebsiteGroups-en" href="/en/help/websiteGroups">
+								<span>
+										Website Groups
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpDocTypes-en" href="/en/help/documentTypes">
+
+								<span>
+										Document Types
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpUsers-en" href="/en/help/users">
+								<span>
+										Users
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpAllUserRoles-en" href="/en/help/webgroupRoles">
+								<span>
+										User roles
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_HelpWebsites-en" href="/en/help/websites">
+								<span>
+										Websites
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpZones-en" href="/en/help/zones">
+
+								<span>
+										Zones
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpProjects-en" href="/en/help/projects">
+								<span>
+										Projects
+								</span>
+
+							</a>
+
+			<ul>
+							<li>
+							<a id="nav_HelpProjectsDocuments-en" href="/en/help/projectsDocuments">
+								<span>
+										Documents
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_HelpProjectsBinaryContent-en" href="/en/help/projectsBinaryContent">
+								<span>
+										Binary Content
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpProjectsTemplates-en" href="/en/help/projectsTemplates">
+
+								<span>
+										Templates
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpProjectsDocumentAliases-en" href="/en/help/projectsDocumentAliases">
+								<span>
+										Document aliases
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpProjectsBasicLanguages-en" href="/en/help/projectsBasicLanguages">
+								<span>
+										Basic Languages
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_HelpProjectsLanguages-en" href="/en/help/projectsLanguages">
+								<span>
+										Languages
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpProjectsNavigation-en" href="/en/help/projectsNavigation">
+
+								<span>
+										Navigation
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpProjectsStrings-en" href="/en/help/projectsStrings">
+								<span>
+										Strings
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpProjectsNews-en" href="/en/help/projectsNews">
+								<span>
+										News Groups
+								</span>
+							</a>
+							</li>
+
+			</ul>
+							</li>
+							<li>
+							<a id="nav_HelpeCommerce-en" href="/en/help/eComm">
+								<span>
+										eCommerce
+								</span>
+							</a>
+
+			<ul>
+
+							<li>
+							<a id="nav_HelpeCommerceVatCategories-en" href="/en/help/eCommVatCategories">
+								<span>
+										VAT Categories
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpeCommerceRegions-en" href="/en/help/eCommRegions">
+
+								<span>
+										Regions
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpeCommerceCountries-en" href="/en/help/eCommCountries">
+								<span>
+										Countries
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpeCommerceCurrencies-en" href="/en/help/eCommCurrencies">
+								<span>
+										Currencies
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_HelpeCommerceBranches-en" href="/en/help/eCommBranches">
+								<span>
+										Branches
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpeCommerceVatRates-en" href="/en/help/eCommVatRates">
+
+								<span>
+										VAT Rates
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpeCommerceProducts-en" href="/en/help/eCommProducts">
+								<span>
+										Products
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpeCommercePricelists-en" href="/en/help/eCommPricelists">
+								<span>
+										Pricelists
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_HelpeCommerceProductCategories-en" href="/en/help/eCommProductCategories">
+								<span>
+										Product Categories
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpeCommerceCheckouts-en" href="/en/help/eCommCheckouts">
+
+								<span>
+										Checkouts
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpeCommercePaymentSystems-en" href="/en/help/eCommPaymentSystems">
+								<span>
+										Payment gateways contracts
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_HelpeCommerceCampaigns-en" href="/en/help/eCommCampaigns">
+								<span>
+										Campaigns
+								</span>
+							</a>
+							</li>
+
+			</ul>
+							</li>
+			</ul>
+							</li>
+							<li>
+							<a id="nav_doc-en" href="/en/doc/index">
+								<span>
+										Principles
+								</span>
+
+							</a>
+
+			<ul>
+							<li>
+							<a id="nav_docUIbasics-en" href="/en/doc/UIbasics">
+								<span>
+										Basic principles of µB CMS
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_docuBlanguage-en" href="/en/doc/uBlanguage">
+								<span>
+										Language μB
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_docNavigation-en" href="/en/doc/navigation">
+
+								<span>
+										Navigation
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_docTemplates-en" href="/en/doc/templates">
+								<span>
+										Templates
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_docWidgets-en" href="/en/doc/widgets">
+								<span>
+										Widgets
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_docWebs-en" href="/en/doc/websites">
+								<span>
+										Websites
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_docUsersRolesZones-en" href="/en/doc/usersAndRoles">
+
+								<span>
+										Users, roles and zones
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_docLanguages-en" href="/en/doc/languages">
+								<span>
+										Languages
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_docProjects-en" href="/en/doc/projects">
+								<span>
+										Projects
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_docExtendingObjects-en" href="/en/doc/extendingObjects">
+								<span>
+										Extending objects
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_docDocuments-en" href="/en/doc/documents">
+
+								<span>
+										Documents
+								</span>
+							</a>
+							</li>
+			</ul>
+							</li>
+							<li>
+							<a id="nav_tech-en" href="/en/doc/tech">
+
+								<span>
+										Technical Principles
+								</span>
+							</a>
+
+			<ul>
+							<li>
+							<a id="nav_techArchitecture-en" href="/en/doc/techArchitecture">
+								<span>
+										Architecture of μB System
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_techMVP-en" href="/en/doc/techMVP">
+								<span>
+										MVP Paradigm
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_techRepository-en" href="/en/doc/techRepository">
+								<span>
+										Repository
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_techPresenters-en" href="/en/doc/techPresenters">
+
+								<span>
+										Presenters
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_techWidgets-en" href="/en/doc/techWidgets">
+								<span>
+										Widgets
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_techDocumentProcessor-en" href="/en/doc/techDocumentProcessor">
+								<span>
+										Document processor
+								</span>
+							</a>
+							</li>
+
+							<li>
+							<a id="nav_techDataAccess-en" href="/en/doc/techDataAccess">
+								<span>
+										Data Layer
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_techDataSources-en" href="/en/doc/techDataSources">
+
+								<span>
+										Data models and sources
+								</span>
+							</a>
+							</li>
+							<li>
+							<a id="nav_techTemplates-en" href="/en/doc/techTemplates">
+								<span>
+										Templates
+								</span>
+
+							</a>
+							</li>
+			</ul>
+							</li>
+							<li>
+							<a id="nav_company-en" href="/en/aboutCompany">
+								<span>
+										IS4U company
+								</span>
+
+							</a>
+							</li>
+							<li>
+							<a id="nav_about-en" href="/en/about">
+								<span>
+										About
+								</span>
+							</a>
+							</li>
+
+			</ul>
+							</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div id="page">
+
+	
+
+	
+
+	
+	
+
+	
+	
+
+		<h2 class="title"> All Projects in Website Group "AVG DACH website group"</h2>
+
+<div class="breadcrumbs">
+
+			
+							<a class="active" id="nav_cms-en" href="/en/cms">
+								<span>
+										CMS
+								</span>
+							</a>
+							 <img src="arrow-right-small.png" alt="&gt;" title="&gt;"> 
+							<a class="active" id="nav_projects-en" href="/en/projects">
+								<span>
+										Projects
+								</span>
+
+							</a>
+							 
+			
+</div>
+
+	<form method="post"><input type="hidden" name="_forms_id" value="dprojects_1317985562.7491" />
+	
+	
+	<div class="message">
+	Project was approved.
+</div>
+
+<a href="">AAA</a>
+	
+
+	<table class="changeFocus dataGrid">
+<tr>
+
+		<th class="fixed">Sel.</th>
+
+		<th class="fixed">Status</th>
+
+		<th >Name</th>
+
+		<th class="fixed">Actions</th>
+
+</tr>
+<tr><td colspan="100%">No data found</td></tr>
+</table>
+
+	<p><input type="submit" name="delete" value="Remove project" /></p>
+
+
+	</form>
+
+	<p />
+	<h2 class="title">New project</h2>
+	<p></p>
+
+	<form method="post"><input type="hidden" name="_forms_id" value="dprojects_1317985562.7491" />
+	
+
+	<table class="form">
+	<tr><th>Name</th><td><input type="text" name="name" class="req" /> <span class="desc"> </span></td></tr><tr><th>Description</th><td><textarea name="descr"></textarea> <span class="desc"> </span></td></tr><tr><th></th><td><input type="submit" name="add" value="Add project" /> <span class="desc"> </span></td></tr>
+</table><input type="hidden" name="state" value="1" /><input type="hidden" name="websiteGroup" value="2" />
+
+	</form>
+
+
+
+
+
+
+
+	</div>
+</div>
+<div id="help" class="hide">
+Help
+</div>
+<script type="text/javascript">
+
+
+function showAbout(st){
+	if(st==1){
+		$("#about").fadeIn();
+	}else{
+		$("#about").fadeOut();
+	}
+}
+
+$("#about").hover(function(){},function(){
+	showAbout(0);
+});
+
+$(".changeFocus tr").hover(function(){
+		$(this).children("td").addClass("focus");
+	},
+	function(){
+		$(this).children("td").removeClass("focus");
+	});
+
+</script>
+
+</body>
+</html>
