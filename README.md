@@ -50,6 +50,12 @@ sudo docker exec dockerlamp_www_1 /var/www/html/anton/app/backend/do-all.sh
 1. Look into log files in Anton/log
 2. Be sure you have right permissions on your Host: Docker should have writable rights in an-data, an-data-sc, temp, log and it should be able to execute scripts in app/backend
 
-# TODO
+# FAQ
 
-1. Setup debug mode
+1. How to setup debug mode?
+
+Go to `app/bootstrap.php` and setup `Debugger::enable();` with no specific IP address
+
+2. Could not find driver
+
+Change driver in `app/config/config.neon` to mysql
