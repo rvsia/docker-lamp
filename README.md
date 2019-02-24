@@ -59,3 +59,7 @@ Go to `app/bootstrap.php` and setup `Debugger::enable();` with no specific IP ad
 2. Could not find driver
 
 Change driver in `app/config/config.neon` to mysql
+
+3. Cannot run the comparison sciprt
+
+Change driver back to `mysqli` (just for the script)
