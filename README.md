@@ -36,7 +36,8 @@ SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 
 That's it! Let's go make a magic!
 
-Anton should be running on **localhost:8001**/anton/www
+Anton should be running on **localhost:8001/anton/www**
+
 PHPMyAdmin on **localhost:8000**
 
 Main script for comparing documents
