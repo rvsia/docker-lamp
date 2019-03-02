@@ -28,7 +28,7 @@ git clone http://git.pef.mendelu.cz/xvsiansk/anton.git
 sudo docker-compose up
 ```
 
-Go to **localhost:8000** (root, test) and run a command
+Go to **localhost:8000** (root, test) and run a command (**always**!)
 
 ```
 SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
@@ -36,7 +36,7 @@ SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 
 That's it! Let's go make a magic!
 
-Anton should be running on **localhost:8001**
+Anton should be running on **localhost:8001**/anton/www
 PHPMyAdmin on **localhost:8000**
 
 Main script for comparing documents
@@ -63,3 +63,7 @@ Change driver in `app/config/config.neon` to mysql
 3. Cannot run the comparison sciprt
 
 Change driver back to `mysqli` (just for the script)
+
+# TODO
+
+1. Setup database right to not write the SQL command everytime
